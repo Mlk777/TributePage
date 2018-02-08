@@ -1,0 +1,41 @@
+body {
+  background-color: #FCFFF9;
+}
+
+.scrollspy {
+  position: relative;
+  height: 300px;
+  overflow-y: scroll;
+}
+
+.section-style {
+  height: auto;
+  padding-bottom: 20px;
+}
+
+p {
+  padding-left: 20px;
+}
+
+.navbar-inverse {
+  background-color: #fff;
+  border-color: #f9f7f7;
+}
+
+#TopSection {
+  background: repeating-linear-gradient(rgba(0, 155, 58, 0.8), rgba(254, 209, 0, 0.7), rgba(0, 0, 0, 0.6)), url('http://c0.thejournal.ie/media/2012/12/athletics-usain-bolt-file-photo-2-752x501.jpg') -4em 20%/cover repeat;
+}
+
+.fill-viewport {
+  min-height: 32vh;
+}
+
+#text-heading {
+  padding-left: 300px;
+}
+
+.well {
+  background-color: #FFFFFF;
+  border-width: 2px;
+  border-color: #FFF2D9
+}

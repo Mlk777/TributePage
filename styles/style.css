@@ -1,12 +1,17 @@
 :root {
-  --body-background-color: #FCFFF9;
+  --body-background-color: #fcfff9;
   --well-background-color: #e6dbdb2e;
-  --topsection-gradient-color: rgba(0, 155, 58, 0.8), rgba(254, 209, 0, 0.7), rgba(0, 0, 0, 0.6);
-  --well-border-color: #FFF2D9;
+  --topsection-gradient-color: rgba(0, 155, 58, 0.8), rgba(254, 209, 0, 0.7),
+    rgba(0, 0, 0, 0.6);
+  --well-border-color: #fff2d9;
 }
 
 body {
   background-color: var(--body-background-color);
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .scrollspy {
@@ -17,15 +22,40 @@ body {
 
 .section-style {
   height: auto;
-  padding-bottom: 20px;
+  padding-bottom: 50px;
 }
 
-p {
+li > a {
+  font-size: calc(10px + 0.5vw);
+}
+
+.display-2 {
+  font-weight: 500;
+}
+
+.display-4 {
+  font-size: calc(26px + 0.5vw);
+}
+
+.section-style > p {
   padding-left: 20px;
 }
 
+.well {
+  height: auto;
+}
+
 #TopSection {
-  background: repeating-linear-gradient(var(--topsection-gradient-color)), url('http://c0.thejournal.ie/media/2012/12/athletics-usain-bolt-file-photo-2-752x501.jpg') -4em 20%/cover repeat;
+  width: 100%;
+  align-self: start;
+  background: repeating-linear-gradient(var(--topsection-gradient-color)),
+    url("http://c0.thejournal.ie/media/2012/12/athletics-usain-bolt-file-photo-2-752x501.jpg") -4em
+      20% / cover repeat;
+}
+
+#bottomSection > p {
+  padding-top: 15px;
+  font-size: calc(14px + 0.5vw);
 }
 
 .fill-viewport {
@@ -49,5 +79,32 @@ p {
 
   .display-4 {
     font-size: 2.5rem;
+  }
+}
+
+@media all and (max-width: 600px) {
+  body {
+    align-content: center;
+  }
+
+  li > a {
+    font-size: 1.25em;
+  }
+
+  #TopSection {
+    align-self: unset;
+    margin-bottom: 3em;
+  }
+
+  .display-2 {
+    font-size: 3.5rem;
+  }
+
+  .display-4 {
+    font-size: 2.5rem;
+  }
+
+  #bottomSection > p {
+    font-size: 1.15em;
   }
 }
